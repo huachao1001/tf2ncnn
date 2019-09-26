@@ -1,6 +1,5 @@
 # tf2ncnn
-
-# 编译流程
+ 
 # 1 安装Protobuf-3.4.0
  下载protobuf-3.4.0：[https://github.com/google/protobuf/archive/v3.4.0.zip](https://github.com/google/protobuf/archive/v3.4.0.zip)
 ```
@@ -24,3 +23,6 @@
 
 > nmake
 ```
+
+# 3 使用
+> tf2ncnn <your-frozen-pb>.pb ncnn.proto ncnn.bin
