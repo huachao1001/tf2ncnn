@@ -18,9 +18,9 @@ if(PROTOBUF_FOUND)
         types.proto
         versions.proto
     )
-    add_executable(tensorflow2ncnn tensorflow2ncnn.cpp ${TENSORFLOW_PROTO_SRCS} ${TENSORFLOW_PROTO_HDRS})
-    set_target_properties(tensorflow2ncnn PROPERTIES CXX_STANDARD 11)
-    target_link_libraries(tensorflow2ncnn ${PROTOBUF_LIBRARIES})
+    add_executable(tf2ncnn tf2ncnn.cpp ${TENSORFLOW_PROTO_SRCS} ${TENSORFLOW_PROTO_HDRS})
+    set_target_properties(tf2ncnn PROPERTIES CXX_STANDARD 11)
+    target_link_libraries(tf2ncnn ${PROTOBUF_LIBRARIES})
 else()
     message(WARNING "Protobuf not found, tensorflow model convert tool won't be built")
 endif()
